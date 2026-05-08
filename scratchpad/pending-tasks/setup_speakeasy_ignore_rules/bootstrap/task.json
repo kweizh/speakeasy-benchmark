@@ -1,0 +1,5 @@
+{
+  "task_name": "setup_speakeasy_ignore_rules",
+  "task_description": "# Setup Speakeasy Ignore Rules\n\n## Background\nYou have a Speakeasy Python SDK project in `/home/user/myproject`. You want to customize the generated SDK by modifying a file manually, but you don't want Speakeasy to overwrite your changes during the next generation.\n\n## Requirements\n- Create a `.genignore` file in the project root to instruct Speakeasy to ignore specific files.\n- Add a rule to ignore the `src/sdk/custom_logic.py` file.\n\n## Implementation Guide\n1. Navigate to `/home/user/myproject`.\n2. Create a `.genignore` file.\n3. Add `src/sdk/custom_logic.py` to the `.genignore` file.\n\n## Constraints\n- Project path: `/home/user/myproject`",
+  "truth": "# Verification Plan\n\n## Setup\n1. `cd /home/user/myproject`\n\n## Verification Steps\n1. Read the `.genignore` file in `/home/user/myproject` and check if it contains `src/sdk/custom_logic.py`.\n\n## Expected Results\n- The `.genignore` file exists.\n- The file contains the exact string `src/sdk/custom_logic.py`."
+}

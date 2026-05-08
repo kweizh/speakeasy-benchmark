@@ -1,0 +1,6 @@
+[environment]
+image = "environment"
+
+[tests]
+initial_state = "bootstrap/test_initial_state.py"
+final_state = "tests/test_final_state.py"
