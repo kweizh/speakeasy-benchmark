@@ -1,0 +1,66 @@
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Downloading pygments (1.2MiB)
+ Downloading pygments
+Installed 7 packages in 14ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 4 items
+
+tests/test_final_state.py ...F                                           [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_provider_compiles ____________________________
+
+    def test_provider_compiles():
+        """Priority 1: Run 'go build' to ensure the generated provider is valid Go code."""
+        # First run go mod tidy
+        tidy_result = subprocess.run(
+            ["go", "mod", "tidy"],
+            cwd=TERRAFORM_DIR,
+            capture_output=True,
+            text=True
+        )
+>       assert tidy_result.returncode == 0, f"'go mod tidy' failed: {tidy_result.stderr}"
+E       AssertionError: 'go mod tidy' failed: go: downloading google.golang.org/grpc v1.56.1
+E         go: downloading github.com/mitchellh/cli v1.1.4
+E         go: downloading github.com/mattn/go-isatty v0.0.14
+E         go: downloading github.com/golang/protobuf v1.5.3
+E         go: downloading github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d
+E         go: downloading github.com/oklog/run v1.0.0
+E         go: downloading github.com/hashicorp/go-uuid v1.0.3
+E         go: downloading github.com/hashicorp/terraform-registry-address v0.2.1
+E         go: downloading google.golang.org/protobuf v1.31.0
+E         go: downloading github.com/fatih/color v1.13.0
+E         go: downloading github.com/hashicorp/go-version v1.6.0
+E         go: downloading github.com/hashicorp/hc-install v0.4.0
+E         go: downloading github.com/hashicorp/terraform-exec v0.17.2
+E         go: downloading github.com/hashicorp/terraform-json v0.14.0
+E         go: downloading golang.org/x/text v0.10.0
+E         go: downloading github.com/russross/blackfriday v1.6.0
+E         go: downloading github.com/zclconf/go-cty v1.13.1
+E         go: github.com/hashicorp/go-hclog@v1.5.0 requires
+E         	golang.org/x/sys@v0.0.0-20220503163025-988cb79eb6c6: Get "https://proxy.golang.org/golang.org/x/sys/@v/v0.0.0-20220503163025-988cb79eb6c6.mod": EOF
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['go', 'mod', 'tidy'], returncode=1, stdout='', stderr='go: downloading google.golang.org/grpc v...163025-988cb79eb6c6: Get "https://proxy.golang.org/golang.org/x/sys/@v/v0.0.0-20220503163025-988cb79eb6c6.mod": EOF\n').returncode
+
+tests/test_final_state.py:44: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_final_state.py::test_terraform_directory_exists
+PASSED tests/test_final_state.py::test_provider_code_generated
+PASSED tests/test_final_state.py::test_pet_resource_generated
+FAILED tests/test_final_state.py::test_provider_compiles - AssertionError: 'g...
+==================== 1 failed, 3 passed in 70.16s (0:01:10) ====================

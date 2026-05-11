@@ -1,0 +1,38 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 2,
+            "passed": 2,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778513271.128394,
+            "stop": 1778513275.2104301
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_speakeasy_validate_success",
+                "status": "passed",
+                "duration": 4.068604147993028,
+                "start": 1778513271.1404598,
+                "stop": 1778513275.2093782,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_openapi_yaml_has_retries_configuration",
+                "status": "passed",
+                "duration": 0.0005330094136297703,
+                "start": 1778513275.2096155,
+                "stop": 1778513275.210276,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}

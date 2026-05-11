@@ -1,0 +1,59 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 4,
+            "passed": 3,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778513072.7618036,
+            "stop": 1778513142.9178755
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_terraform_directory_exists",
+                "status": "passed",
+                "duration": 0.0006754286587238312,
+                "start": 1778513072.7744496,
+                "stop": 1778513072.775431,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_provider_code_generated",
+                "status": "passed",
+                "duration": 0.0005212440155446529,
+                "start": 1778513072.7757132,
+                "stop": 1778513072.7764153,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_pet_resource_generated",
+                "status": "passed",
+                "duration": 0.0004926039837300777,
+                "start": 1778513072.7766378,
+                "stop": 1778513072.7773056,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_provider_compiles",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 70.12289888877422,
+                "start": 1778513072.7775185,
+                "stop": 1778513142.9176478,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "def test_provider_compiles():\n        \"\"\"Priority 1: Run 'go build' to ensure the generated provider is valid Go code.\"\"\"\n        # First run go mod tidy\n        tidy_result = subprocess.run(\n            [\"go\", \"mod\", \"tidy\"],\n            cwd=TERRAFORM_DIR,\n            capture_output=True,\n            text=True\n        )\n>       assert tidy_result.returncode == 0, f\"'go mod tidy' failed: {tidy_result.stderr}\"\nE       AssertionError: 'go mod tidy' failed: go: downloading google.golang.org/grpc v1.56.1\nE         go: downloading github.com/mitchellh/cli v1.1.4\nE         go: downloading github.com/mattn/go-isatty v0.0.14\nE         go: downloading github.com/golang/protobuf v1.5.3\nE         go: downloading github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d\nE         go: downloading github.com/oklog/run v1.0.0\nE         go: downloading github.com/hashicorp/go-uuid v1.0.3\nE         go: downloading github.com/hashicorp/terraform-registry-address v0.2.1\nE         go: downloading google.golang.org/protobuf v1.31.0\nE         go: downloading github.com/fatih/color v1.13.0\nE         go: downloading github.com/hashicorp/go-version v1.6.0\nE         go: downloading github.com/hashicorp/hc-install v0.4.0\nE         go: downloading github.com/hashicorp/terraform-exec v0.17.2\nE         go: downloading github.com/hashicorp/terraform-json v0.14.0\nE         go: downloading golang.org/x/text v0.10.0\nE         go: downloading github.com/russross/blackfriday v1.6.0\nE         go: downloading github.com/zclconf/go-cty v1.13.1\nE         go: github.com/hashicorp/go-hclog@v1.5.0 requires\nE         \tgolang.org/x/sys@v0.0.0-20220503163025-988cb79eb6c6: Get \"https://proxy.golang.org/golang.org/x/sys/@v/v0.0.0-20220503163025-988cb79eb6c6.mod\": EOF\nE         \nE       assert 1 == 0\nE        +  where 1 = CompletedProcess(args=['go', 'mod', 'tidy'], returncode=1, stdout='', stderr='go: downloading google.golang.org/grpc v...163025-988cb79eb6c6: Get \"https://proxy.golang.org/golang.org/x/sys/@v/v0.0.0-20220503163025-988cb79eb6c6.mod\": EOF\\n').returncode\n\ntests/test_final_state.py:44: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

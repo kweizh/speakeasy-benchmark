@@ -1,0 +1,19 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    my-source:
+        inputs:
+            - location: openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/kw/kw/my-source
+targets:
+    csharp:
+        target: csharp
+        source: my-source
+        output: ./sdk/csharp
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/kw/kw/my-source-csharp-code-samples
+            labelOverride:
+                fixedValue: Csharp (SDK)
+            blocking: false

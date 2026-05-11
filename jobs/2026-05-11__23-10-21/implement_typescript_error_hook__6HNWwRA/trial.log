@@ -1,0 +1,2 @@
+Running command: apt-get update && apt-get install -y curl ripgrep
+Trial implement_typescript_error_hook__6HNWwRA failed: Agent setup timed out after 360.0 seconds
