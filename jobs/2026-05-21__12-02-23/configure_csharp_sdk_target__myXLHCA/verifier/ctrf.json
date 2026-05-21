@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 0,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1779337334.3789153,
+            "stop": 1779337334.4000678
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_final_state",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0006269379518926144,
+                "start": 1779337334.3860643,
+                "stop": 1779337334.3999002,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "def test_final_state():\n        assert os.path.exists(\"/home/user/myproject/.speakeasy/workflow.yaml\"), \"workflow.yaml must exist\"\n        assert os.path.exists(\"/home/user/myproject/sdk/csharp\"), \"sdk/csharp must exist\"\n    \n        # Check if there are some .cs files\n        has_cs_files = False\n        for root, dirs, files in os.walk(\"/home/user/myproject/sdk/csharp\"):\n            for file in files:\n                if file.endswith(\".cs\"):\n                    has_cs_files = True\n                    break\n    \n>       assert has_cs_files, \"Generated C# SDK must contain .cs files\"\nE       AssertionError: Generated C# SDK must contain .cs files\nE       assert False\n\ntests/test_final_state.py:15: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

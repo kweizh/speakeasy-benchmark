@@ -1,0 +1,59 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 4,
+            "passed": 3,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1779336878.3060672,
+            "stop": 1779336878.4490108
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_openapi_modified_yaml_exists",
+                "status": "passed",
+                "duration": 0.0005514952354133129,
+                "start": 1779336878.315711,
+                "stop": 1779336878.3164756,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_openapi_modified_yaml_content",
+                "status": "passed",
+                "duration": 0.00046040816232562065,
+                "start": 1779336878.3166945,
+                "stop": 1779336878.3172958,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_openapi_modified_is_valid",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.11524295480921865,
+                "start": 1779336878.3174648,
+                "stop": 1779336878.4478555,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "def test_openapi_modified_is_valid():\n        \"\"\"Use Speakeasy CLI to validate the modified OpenAPI spec.\"\"\"\n        modified_path = os.path.join(PROJECT_DIR, \"openapi-modified.yaml\")\n        result = subprocess.run(\n            [\"speakeasy\", \"validate\", \"-s\", modified_path],\n            capture_output=True, text=True, cwd=PROJECT_DIR\n        )\n>       assert result.returncode == 0, f\"'speakeasy validate' failed on the modified spec: {result.stderr}\\n{result.stdout}\"\nE       AssertionError: 'speakeasy validate' failed on the modified spec: unknown shorthand flag: 's' in -s\nE         \nE         \nE       assert 1 == 0\nE        +  where 1 = CompletedProcess(args=['speakeasy', 'validate', '-s', '/home/user/project/openapi-modified.yaml'], returncode=1, stdout='', stderr=\"unknown shorthand flag: 's' in -s\\n\").returncode\n\ntests/test_final_state.py:27: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_final_state.py::test_original_openapi_yaml_unmodified",
+                "status": "passed",
+                "duration": 0.0006197397597134113,
+                "start": 1779336878.448066,
+                "stop": 1779336878.4488475,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}

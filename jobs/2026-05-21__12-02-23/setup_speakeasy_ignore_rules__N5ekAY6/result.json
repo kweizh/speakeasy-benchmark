@@ -1,0 +1,99 @@
+{
+    "id": "dccc9fc7-54fc-4de3-bb20-37cd5dc82369",
+    "task_name": "setup_speakeasy_ignore_rules",
+    "trial_name": "setup_speakeasy_ignore_rules__N5ekAY6",
+    "trial_uri": "file:///home/kw/code/zealt/pochi-harbor/jobs/2026-05-21__12-02-23/setup_speakeasy_ignore_rules__N5ekAY6",
+    "task_id": {
+        "path": "/home/kw/code/zealt/speakeasy-benchmark/tasks/setup_speakeasy_ignore_rules"
+    },
+    "source": "tasks",
+    "task_checksum": "9f69b8e75e0181a7556a5ea62c36c4fed2f2842b150f2a13320575b45fa386bb",
+    "config": {
+        "task": {
+            "path": "/home/kw/code/zealt/speakeasy-benchmark/tasks/setup_speakeasy_ignore_rules",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "tasks"
+        },
+        "trial_name": "setup_speakeasy_ignore_rules__N5ekAY6",
+        "trials_dir": "jobs/2026-05-21__12-02-23",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agents.pochi:Pochi",
+            "model_name": "google/gemini-3-flash",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts": [
+                {
+                    "type": "bind",
+                    "source": "test_initial_state.py",
+                    "target": "/bootstrap/test_initial_state.py"
+                }
+            ],
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [
+            "/home/user"
+        ],
+        "job_id": "5c6d2d5e-87e4-48de-9cf9-de1f2d54e994"
+    },
+    "agent_info": {
+        "name": "pochi",
+        "version": "unknown",
+        "model_info": {
+            "name": "gemini-3-flash",
+            "provider": "google"
+        }
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "NonZeroAgentExitCodeError",
+        "exception_message": "Command failed (exit 100): apt-get update && apt-get install -y curl ripgrep\nstdout: Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]\nGet:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]\nGet:3 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1505 kB]\nGet:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]\nGet:5 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [2072 kB]\nGet:6 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [3671 kB]\nGet:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]\nGet:8 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [48.4 kB]\nGet:9 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]\nGet:10 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]\nGet:11 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]\nGet:12 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]\nGet:13 http://archive.ubuntu.com/ubuntu nob ... [truncated]\nstderr: None",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 1255, in run\n    await self._setup_agent()\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 372, in _setup_agent\n    await asyncio.wait_for(\n  File \"/opt/miniconda3/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 392, in setup\n    await self.install(environment)\n  File \"/home/kw/code/zealt/pochi-harbor/agents/pochi.py\", line 57, in install\n    await self.exec_as_root(\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 353, in exec_as_root\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 329, in _exec\n    raise NonZeroAgentExitCodeError(\nharbor.agents.installed.base.NonZeroAgentExitCodeError: Command failed (exit 100): apt-get update && apt-get install -y curl ripgrep\nstdout: Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]\nGet:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]\nGet:3 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1505 kB]\nGet:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]\nGet:5 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [2072 kB]\nGet:6 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [3671 kB]\nGet:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]\nGet:8 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [48.4 kB]\nGet:9 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]\nGet:10 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]\nGet:11 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]\nGet:12 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]\nGet:13 http://archive.ubuntu.com/ubuntu nob ... [truncated]\nstderr: None\n",
+        "occurred_at": "2026-05-21T12:08:35.617069"
+    },
+    "started_at": "2026-05-21T04:06:58.840070Z",
+    "finished_at": "2026-05-21T04:08:47.647927Z",
+    "environment_setup": {
+        "started_at": "2026-05-21T04:06:58.841322Z",
+        "finished_at": "2026-05-21T04:07:20.265350Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-21T04:07:20.265363Z",
+        "finished_at": "2026-05-21T04:08:35.171118Z"
+    },
+    "agent_execution": null,
+    "verifier": null,
+    "step_results": null
+}

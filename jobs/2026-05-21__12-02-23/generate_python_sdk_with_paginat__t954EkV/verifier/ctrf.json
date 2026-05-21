@@ -1,0 +1,50 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 2,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1779336403.903472,
+            "stop": 1779336404.2881083
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_openapi_spec_valid_via_cli",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.3452467233873904,
+                "start": 1779336403.9145741,
+                "stop": 1779336404.286079,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "def test_openapi_spec_valid_via_cli():\n        \"\"\"Priority 1: Use Speakeasy CLI to verify the OpenAPI specification is valid.\"\"\"\n        result = subprocess.run(\n            [\"speakeasy\", \"validate\", \"-s\", OPENAPI_FILE],\n            capture_output=True, text=True, cwd=PROJECT_DIR\n        )\n>       assert result.returncode == 0, f\"'speakeasy validate' failed: {result.stderr or result.stdout}\"\nE       AssertionError: 'speakeasy validate' failed: unknown shorthand flag: 's' in -s\nE         \nE       assert 1 == 0\nE        +  where 1 = CompletedProcess(args=['speakeasy', 'validate', '-s', '/home/user/openapi.yaml'], returncode=1, stdout='', stderr=\"unknown shorthand flag: 's' in -s\\n\").returncode\n\ntests/test_final_state.py:15: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_final_state.py::test_pagination_extension_exists",
+                "status": "passed",
+                "duration": 0.000530618242919445,
+                "start": 1779336404.2864249,
+                "stop": 1779336404.2871218,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_sdk_directory_and_files_exist",
+                "status": "passed",
+                "duration": 0.00046519190073013306,
+                "start": 1779336404.2873344,
+                "stop": 1779336404.2879367,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}

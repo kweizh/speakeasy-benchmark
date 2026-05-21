@@ -1,0 +1,13 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    petstore-source:
+        inputs:
+            - location: ./openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/kw/kw/petstore-source
+targets:
+    petstore-terraform:
+        target: terraform
+        source: petstore-source
+        output: ./terraform
