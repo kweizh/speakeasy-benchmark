@@ -1,0 +1,19 @@
+[environment]
+image = "harbor-task-environment"
+build_context = "environment"
+
+[environment.env]
+POCHI_API_KEY = "${POCHI_API_KEY}"
+POCHI_LOG = "debug"
+
+[verifier]
+type = "python"
+entrypoint = "pytest /tmp/tests/test_final_state.py"
+
+[[verifier.mounts]]
+source = "tests"
+target = "/tmp/tests"
+
+[verifier.env]
+POCHI_API_KEY = "${POCHI_API_KEY}"
+POCHI_LOG = "debug"

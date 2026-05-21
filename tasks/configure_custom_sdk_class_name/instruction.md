@@ -1,0 +1,19 @@
+# Configure Custom SDK Class Name
+
+## Background
+Speakeasy generates SDKs using configurations defined in `gen.yaml`. By default, the SDK class name might be derived from the OpenAPI document. You need to explicitly set the SDK class name to `MyCustomSDK` for the TypeScript target.
+
+## Requirements
+- Modify the existing `gen.yaml` file to set the `sdkClassName` to `MyCustomSDK` for the `typescript` target.
+
+## Implementation Guide
+1. Locate the `gen.yaml` file in `/home/user/project`.
+2. Update the `typescript` target configuration to include `sdkClassName: MyCustomSDK`.
+3. You can use a tool like `yq` or edit the file directly.
+
+## Constraints
+- Project path: /home/user/project
+- Must be a single command or a very simple edit.
+
+## Integrations
+- None

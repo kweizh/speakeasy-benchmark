@@ -1,2 +1,0 @@
-Running command: apt-get update && apt-get install -y curl ripgrep
-Trial generate_python_sdk_with_paginat__PWqeHAJ failed: Agent setup timed out after 360.0 seconds

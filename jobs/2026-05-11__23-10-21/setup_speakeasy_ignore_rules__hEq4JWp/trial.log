@@ -1,2 +1,0 @@
-Running command: apt-get update && apt-get install -y curl ripgrep
-Trial setup_speakeasy_ignore_rules__hEq4JWp failed: Agent setup timed out after 360.0 seconds
