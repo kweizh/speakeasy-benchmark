@@ -1,9 +1,211 @@
 1:"$Sreact.fragment"
 2:"$Sreact.suspense"
 3:I[42654,["/speakeasy-benchmark/_next/static/chunks/babff0e7418ab052.js","/speakeasy-benchmark/_next/static/chunks/3ecbb78a8ff87549.js","/speakeasy-benchmark/_next/static/chunks/6081b281ce901f60.js","/speakeasy-benchmark/_next/static/chunks/ab9c434cfac62bb4.js"],"TasksPageClient"]
-7:I[75049,["/speakeasy-benchmark/_next/static/chunks/d2c13bb33c4fcd54.js","/speakeasy-benchmark/_next/static/chunks/c21188132e0e0d48.js"],"OutletBoundary"]
-0:{"buildId":"dAjUCCjZXyFmhcE-eyDUS","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-background text-foreground font-sans selection:bg-primary/20","children":[["$","div",null,{"className":"fixed inset-0 -z-10 h-full w-full bg-background bg-[radial-gradient(#2a2a2a_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 dark:opacity-40"}],["$","$2",null,{"fallback":["$","div",null,{"className":"container mx-auto py-8 text-center","children":"Loading tasks..."}],"children":["$","$L3",null,{"tasksData":[{"taskName":"add_global_retries_configuration","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"add_global_retries_configuration__dD45pp6","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":261.224,"latency_breakdown":{"env_setup":13.03,"agent_setup":149.054,"agent_exec":56.462,"verifier":31.139},"taskName":"add_global_retries_configuration","jobId":"dD45pp6","exec_duration":56.462}]},{"taskName":"configure_csharp_sdk_target","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"configure_csharp_sdk_target__o7538af","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":306.152,"latency_breakdown":{"env_setup":40.537,"agent_setup":109.546,"agent_exec":113.042,"verifier":30.817},"taskName":"configure_csharp_sdk_target","jobId":"o7538af","exec_duration":113.042}]},{"taskName":"configure_custom_sdk_class_name","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"configure_custom_sdk_class_name__tUUJrEU","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":399.29,"latency_breakdown":{"env_setup":27.683,"agent_setup":360.001,"agent_exec":null,"verifier":null},"taskName":"configure_custom_sdk_class_name","jobId":"tUUJrEU","exec_duration":399.29}]},{"taskName":"create_cli_target_from_spec","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"create_cli_target_from_spec__x8VhTZp","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":412.363,"latency_breakdown":{"env_setup":40.554,"agent_setup":360.001,"agent_exec":null,"verifier":null},"taskName":"create_cli_target_from_spec","jobId":"x8VhTZp","exec_duration":412.363}]},{"taskName":"generate_python_sdk_with_pagination","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"generate_python_sdk_with_paginat__PWqeHAJ","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":412.917,"latency_breakdown":{"env_setup":40.655,"agent_setup":360.001,"agent_exec":null,"verifier":null},"taskName":"generate_python_sdk_with_paginat","jobId":"PWqeHAJ","exec_duration":412.917}]},{"taskName":"generate_terraform_provider_basic","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"generate_terraform_provider_basi__aTVgEiS","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":true,"latency_sec":928.243,"latency_breakdown":{"env_setup":40.692,"agent_setup":149.916,"agent_exec":600.128,"verifier":124.82},"taskName":"generate_terraform_provider_basi","jobId":"aTVgEiS","exec_duration":600.128}]},{"taskName":"implement_go_response_hook","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"implement_go_response_hook__znR2VMH","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":true,"latency_sec":854.567,"latency_breakdown":{"env_setup":12.33,"agent_setup":215.711,"agent_exec":600.179,"verifier":14.463},"taskName":"implement_go_response_hook","jobId":"znR2VMH","exec_duration":600.179}]},{"taskName":"implement_python_request_hook","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"implement_python_request_hook__5BVSeAY","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":375.636,"latency_breakdown":{"env_setup":3.194,"agent_setup":360.006,"agent_exec":null,"verifier":null},"taskName":"implement_python_request_hook","jobId":"5BVSeAY","exec_duration":375.636}]},{"taskName":"implement_typescript_error_hook","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"implement_typescript_error_hook__6HNWwRA","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":385.204,"latency_breakdown":{"env_setup":11.199,"agent_setup":360,"agent_exec":null,"verifier":null},"taskName":"implement_typescript_error_hook","jobId":"6HNWwRA","exec_duration":385.204}]},{"taskName":"overlay_add_response_examples","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"overlay_add_response_examples__bH2UrpE","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":276.79,"latency_breakdown":{"env_setup":13.536,"agent_setup":88.977,"agent_exec":61.351,"verifier":101.253},"taskName":"overlay_add_response_examples","jobId":"bH2UrpE","exec_duration":61.351}]},{"taskName":"overlay_remove_deprecated_endpoints","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"overlay_remove_deprecated_endpoi__w9tKTty","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":381.562,"latency_breakdown":{"env_setup":9.946,"agent_setup":360.013,"agent_exec":null,"verifier":null},"taskName":"overlay_remove_deprecated_endpoi","jobId":"w9tKTty","exec_duration":381.562}]},{"taskName":"setup_speakeasy_ignore_rules","instruction":"","trials":[{"job_name":"2026-05-11__23-10-21","trial_name":"setup_speakeasy_ignore_rules__hEq4JWp","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":385.262,"latency_breakdown":{"env_setup":11.658,"agent_setup":360.001,"agent_exec":null,"verifier":null},"taskName":"setup_speakeasy_ignore_rules","jobId":"hEq4JWp","exec_duration":385.262}]}]}]}]]}],["$L4","$L5"],"$L6"]}],"loading":null,"isPartial":false}
-4:["$","script","script-0",{"src":"/speakeasy-benchmark/_next/static/chunks/6081b281ce901f60.js","async":true}]
-5:["$","script","script-1",{"src":"/speakeasy-benchmark/_next/static/chunks/ab9c434cfac62bb4.js","async":true}]
-6:["$","$L7",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
-8:null
+f:I[75049,["/speakeasy-benchmark/_next/static/chunks/d2c13bb33c4fcd54.js","/speakeasy-benchmark/_next/static/chunks/c21188132e0e0d48.js"],"OutletBoundary"]
+4:T464,# Add Global Retries Configuration
+
+## Background
+Speakeasy allows you to configure automatic retries for requests that fail due to network errors or specific HTTP status codes. This can be configured globally in the OpenAPI specification using the `x-speakeasy-retries` extension.
+
+## Requirements
+- Add a global retries configuration to the root of `openapi.yaml`.
+- The retry strategy should be `backoff`.
+- The initial interval should be 500 milliseconds.
+- The max interval should be 60000 milliseconds (60 seconds).
+- The max elapsed time should be 3600000 milliseconds (1 hour).
+- The exponent should be 1.5.
+- It should retry on `5XX` status codes.
+- Connection errors should be retried.
+
+## Implementation Guide
+1. Open `/home/user/project/openapi.yaml`.
+2. Add the `x-speakeasy-retries` extension at the root level with the specified configuration.
+3. Validate the OpenAPI specification using `speakeasy lint openapi -s openapi.yaml` to ensure it is correct.
+
+## Constraints
+- Project path: `/home/user/project`
+- The `openapi.yaml` file must be valid according to `speakeasy lint openapi`.
+
+## Integrations
+- None5:T489,# Configure a Speakeasy CLI Target
+
+## Background
+You have an `openapi.yaml` file for a simple API. Use Speakeasy to configure a project that generates a CLI application from this specification.
+
+## Requirements
+- Initialize a Speakeasy workflow configuration in `.speakeasy/workflow.yaml` with a target named `my-target` of type `cli`.
+- The workflow should reference a source named `my-source` pointing to `./openapi.yaml`.
+- Create a valid `gen.yaml` in `.speakeasy/gen.yaml` for the `cli` target.
+- The `gen.yaml` must define the `cli` target with `version: 1.0.0` and the generation config must have `sdkClassName: TestAPI`.
+
+## Implementation Guide
+1. Create the `.speakeasy` directory.
+2. Create `.speakeasy/workflow.yaml` with the source and target configuration.
+3. Create `.speakeasy/gen.yaml` with the `cli` target configuration.
+4. Run `speakeasy lint config` to ensure your configuration is valid.
+
+## Constraints
+- Project path: /home/user/myproject
+- Do not attempt to use commands that require authentication (like `speakeasy generate` or `speakeasy configure`). You must create the configuration files manually based on Speakeasy documentation.6:T5c5,# Generate Python SDK with Pagination
+
+## Background
+Speakeasy SDKs support automatic pagination. You can configure this by adding the `x-speakeasy-pagination` extension to the OpenAPI description. We have an existing OpenAPI specification for a simple API with a paginated `/items` endpoint.
+
+## Requirements
+- Modify the OpenAPI specification at `/home/user/openapi.yaml` to include the `x-speakeasy-pagination` extension for the `GET /items` operation.
+- The pagination configuration must use the `offsetLimit` type.
+- It must map the `page` query parameter as the page input.
+- It must extract the output results from the `$.data` field of the response.
+- After modifying the spec, use the Speakeasy CLI to generate a Python SDK into the `/home/user/sdk` directory.
+
+## Implementation Guide
+1. Open `/home/user/openapi.yaml`.
+2. Locate the `GET /items` operation.
+3. Add the `x-speakeasy-pagination` extension to the operation with the following structure:
+   ```yaml
+   x-speakeasy-pagination:
+     type: offsetLimit
+     inputs:
+       - name: page
+         in: parameters
+         type: page
+     outputs:
+       results: $.data
+   ```
+4. Generate the Python SDK using the Speakeasy CLI:
+   ```bash
+   speakeasy generate sdk -s /home/user/openapi.yaml -l python -o /home/user/sdk
+   ```
+
+## Constraints
+- Project path: `/home/user`
+- The generated SDK must be placed in `/home/user/sdk`.
+- You must use the Speakeasy CLI to generate the SDK.
+
+## Integrations
+- Speakeasy7:T580,# Generate a Terraform Provider from OpenAPI
+
+## Background
+You have an `openapi.yaml` file defining a simple Petstore API. Your goal is to use the Speakeasy CLI to generate a Terraform provider for this API.
+
+## Requirements
+- The OpenAPI spec is located at `/home/user/myproject/openapi.yaml`.
+- Annotate the `openapi.yaml` to expose the `Pet` resource to Terraform.
+- The `Pet` resource should support `create` and `read` operations based on the `POST /pet` and `GET /pet/{petId}` endpoints.
+- Generate the Terraform provider code in the `/home/user/myproject/terraform` directory.
+- The generated provider must compile successfully.
+
+## Implementation Guide
+1. Modify `/home/user/myproject/openapi.yaml` to include Speakeasy Terraform annotations (`x-speakeasy-entity-operation`, `x-speakeasy-entity`) for the `Pet` resource.
+2. Use the Speakeasy CLI to generate the Terraform provider in the `terraform` directory.
+3. Ensure the generated Go code compiles by running `go mod tidy` and `go build` inside the `terraform` directory.
+
+## Constraints
+- Project path: `/home/user/myproject`
+- The generated provider must be placed in `/home/user/myproject/terraform`.
+- Use `speakeasy generate sdk -l terraform -o ./terraform -s ./openapi.yaml` or set up a `workflow.yaml` to generate the provider.
+- The environment variable `SPEAKEASY_API_KEY` is already set for authentication.
+
+## Integrations
+- Speakeasy8:T672,# Implement a Go Response Hook in Speakeasy
+
+## Background
+Speakeasy allows customizing generated SDKs using hooks. In this task, you will generate a Go SDK from an OpenAPI specification and implement a custom response hook that intercepts all successful responses and injects a specific header before returning the response to the caller.
+
+## Requirements
+- You are provided with a Speakeasy project in `/home/user/project` containing `openapi.yaml` and `gen.yaml` configured for Go SDK generation.
+- Run `speakeasy generate sdk` to scaffold the SDK and the `internal/hooks` directory.
+- Implement an `AfterSuccessHook` in Go that adds an `X-Hook-Injected` header with the value `true` to every successful HTTP response (`http.Response`).
+- Register the hook correctly in the generated registration file so that it is executed by the SDK.
+- Ensure the Go code compiles successfully (`go build ./...` inside the `sdk` directory).
+
+## Implementation Guide
+1. Move to `/home/user/project`.
+2. Run `speakeasy generate sdk` to scaffold the SDK.
+3. Create or modify the hook implementation in `sdk/internal/hooks/` to intercept successful responses and append the `X-Hook-Injected: true` header to the `http.Response.Header` map.
+4. Register your hook in `sdk/internal/hooks/registration.go`.
+5. Run `go mod tidy` and `go build ./...` inside the `sdk` directory to ensure there are no compilation errors.
+
+## Constraints
+- Project path: `/home/user/project`
+- The header name must be exactly `X-Hook-Injected`.
+- The header value must be exactly `true`.
+- The SDK language must be Go.
+- The hook must be an `AfterSuccessHook`.
+
+## Integrations
+- Speakeasy9:T642,# Implement a Python Request Hook in Speakeasy
+
+## Background
+Speakeasy allows customizing generated SDKs using hooks. In this task, you will generate a Python SDK from an OpenAPI specification and implement a custom request hook that injects a specific header into all outgoing requests.
+
+## Requirements
+- Initialize a Speakeasy project in `/home/user/project` using the provided `openapi.yaml`.
+- Configure the `gen.yaml` to generate a Python SDK named `my_sdk`.
+- Enable custom hooks in the SDK configuration.
+- Implement a `BeforeRequestHook` in Python that adds an `X-Organization-Id` header with the value `org_12345` to every request.
+- Register the hook correctly so that it is executed by the SDK.
+- Run `speakeasy generate sdk` to apply the changes.
+
+## Implementation Guide
+1. Move to `/home/user/project` where `openapi.yaml` is located.
+2. Create a `gen.yaml` file configuring the Python SDK generation, ensuring hooks are enabled.
+3. Run `speakeasy generate sdk` to scaffold the SDK and the `src/my_sdk/hooks` directory.
+4. Create or modify the hook implementation in `src/my_sdk/hooks/` to intercept the request and append the `X-Organization-Id: org_12345` header.
+5. Register your hook in `src/my_sdk/hooks/registration.py` (or the equivalent registration file generated by Speakeasy).
+6. Run `speakeasy generate sdk` again to ensure the SDK is fully updated and valid.
+
+## Constraints
+- Project path: `/home/user/project`
+- The header name must be exactly `X-Organization-Id`.
+- The header value must be exactly `org_12345`.
+- The SDK language must be Python.
+
+## Integrations
+- Nonea:T622,# Implement Custom TypeScript Error Hook
+
+## Background
+Speakeasy allows customizing SDK behavior using "hooks". You need to implement a custom TypeScript error hook that intercepts API errors and extracts a custom `x-correlation-id` header from the response, throwing a custom error with this ID.
+
+## Requirements
+- You have a Speakeasy SDK hooks directory at `/home/user/sdk/src/hooks`.
+- Create a custom hook `src/hooks/custom/correlation.ts` that implements `AfterErrorHook`.
+- In `afterError`, if the `response` is not null, has a status code of 500, and contains the header `x-correlation-id`, the hook should throw a new standard `Error` with the exact message: `Correlation Error: <correlation_id>` (replace `<correlation_id>` with the actual header value).
+- If the condition is not met, the hook must return the original `response` and `error` unchanged as `{ response, error }`.
+- Register the hook in `src/hooks/registration.ts` by calling `hooks.registerAfterErrorHook(new CorrelationHook())`.
+
+## Implementation Guide
+1. Navigate to `/home/user/sdk`.
+2. Create `src/hooks/custom/correlation.ts`.
+3. Implement the `CorrelationHook` class using the `AfterErrorHook` and `AfterErrorContext` interfaces from `../types.js`.
+4. Update `src/hooks/registration.ts` to import and register your hook in `initHooks(hooks: Hooks)`.
+5. Run `npx tsc --noEmit` in the `sdk` directory to ensure there are no TypeScript errors.
+
+## Constraints
+- Project path: /home/user/sdk
+- Do not modify `src/hooks/types.ts`.
+- Ensure you export `CorrelationHook` from `correlation.ts`.b:T4cc,# Add Response Examples with OpenAPI Overlay
+
+## Background
+OpenAPI Overlays are a standard way to modify or extend an OpenAPI specification without changing the original source file. In this task, you will use the Speakeasy CLI to apply an overlay that adds a response example to an existing API endpoint.
+
+## Requirements
+- Create an `overlay.yaml` file conforming to the OpenAPI Overlay Specification 1.0.0.
+- The overlay must target the `GET /ping` operation's `200` response in the provided `openapi.yaml`.
+- It should add a `content` object for `application/json` with an `example` of `{"message": "pong"}`.
+- Apply the overlay using the Speakeasy CLI and save the merged output to `openapi-modified.yaml`.
+
+## Implementation Guide
+1. Review the `openapi.yaml` file in the project directory.
+2. Create an `overlay.yaml` file that uses JSONPath `$.paths['/ping'].get.responses['200']` to add the required `content` object.
+3. Run the following command to apply the overlay:
+   `speakeasy overlay apply -o overlay.yaml -s openapi.yaml --out openapi-modified.yaml`
+
+## Constraints
+- Project path: `/home/user/project`
+- Do not modify the original `openapi.yaml` directly.
+- Use the `speakeasy` CLI which is already installed.0:{"buildId":"0Eaju2YOOzIhAJ4Y2R_as","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-background text-foreground font-sans selection:bg-primary/20","children":[["$","div",null,{"className":"fixed inset-0 -z-10 h-full w-full bg-background bg-[radial-gradient(#2a2a2a_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 dark:opacity-40"}],["$","$2",null,{"fallback":["$","div",null,{"className":"container mx-auto py-8 text-center","children":"Loading tasks..."}],"children":["$","$L3",null,{"tasksData":[{"taskName":"add_global_retries_configuration","instruction":"$4","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"add_global_retries_configuration__3nEkTbT","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":101.392,"latency_breakdown":{"env_setup":12.031,"agent_setup":77.156,"agent_exec":null,"verifier":null},"taskName":"add_global_retries_configuration","jobId":"3nEkTbT","exec_duration":101.392}]},{"taskName":"configure_csharp_sdk_target","instruction":"# Configure C# SDK Generation Target\n\n## Background\nYou have a Speakeasy project initialized with an `openapi.yaml` file. You need to configure a C# SDK generation target and run the generation using the CLI.\n\n## Requirements\n- Configure a source named `my-source` pointing to `openapi.yaml`.\n- Configure a C# SDK target named `csharp` using `my-source`.\n- Set the output directory for the C# target to `./sdk/csharp`.\n- Run the Speakeasy CLI to generate the C# SDK.\n\n## Implementation Guide\n1. Use `speakeasy configure sources --location openapi.yaml --source-name my-source --non-interactive` to add `openapi.yaml` as `my-source`.\n2. Use `speakeasy configure targets --target-type csharp --source my-source --non-interactive --target-name csharp --output ./sdk/csharp` to add a `csharp` target.\n3. Run `speakeasy run` to generate the SDK.\n\n## Constraints\n- Project path: /home/user/myproject\n- The generated SDK must be located in `/home/user/myproject/sdk/csharp`.\n\n## Integrations\n- Speakeasy","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"configure_csharp_sdk_target__myXLHCA","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":1201.081,"latency_breakdown":{"env_setup":196.517,"agent_setup":16.053,"agent_exec":367.911,"verifier":605.06},"taskName":"configure_csharp_sdk_target","jobId":"myXLHCA","exec_duration":367.911}]},{"taskName":"configure_custom_sdk_class_name","instruction":"# Configure Custom SDK Class Name\n\n## Background\nSpeakeasy generates SDKs using configurations defined in `gen.yaml`. By default, the SDK class name might be derived from the OpenAPI document. You need to explicitly set the SDK class name to `MyCustomSDK` for the TypeScript target.\n\n## Requirements\n- Modify the existing `gen.yaml` file to set the `sdkClassName` to `MyCustomSDK` for the `typescript` target.\n\n## Implementation Guide\n1. Locate the `gen.yaml` file in `/home/user/project`.\n2. Update the `typescript` target configuration to include `sdkClassName: MyCustomSDK`.\n3. You can use a tool like `yq` or edit the file directly.\n\n## Constraints\n- Project path: /home/user/project\n- Must be a single command or a very simple edit.\n\n## Integrations\n- None","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"configure_custom_sdk_class_name__Qjtedzq","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":242.075,"latency_breakdown":{"env_setup":133.851,"agent_setup":30.933,"agent_exec":38.723,"verifier":4.444},"taskName":"configure_custom_sdk_class_name","jobId":"Qjtedzq","exec_duration":38.723}]},{"taskName":"create_cli_target_from_spec","instruction":"$5","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"create_cli_target_from_spec__BPUJydA","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":245.344,"latency_breakdown":{"env_setup":133.58,"agent_setup":31.202,"agent_exec":60.967,"verifier":5.319},"taskName":"create_cli_target_from_spec","jobId":"BPUJydA","exec_duration":60.967}]},{"taskName":"generate_python_sdk_with_pagination","instruction":"$6","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"generate_python_sdk_with_paginat__t954EkV","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":270.382,"latency_breakdown":{"env_setup":133.413,"agent_setup":31.492,"agent_exec":60.685,"verifier":29.741},"taskName":"generate_python_sdk_with_paginat","jobId":"t954EkV","exec_duration":60.685}]},{"taskName":"generate_terraform_provider_basic","instruction":"$7","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"generate_terraform_provider_basi__Z8xg3uT","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":true,"latency_sec":723.141,"latency_breakdown":{"env_setup":56.438,"agent_setup":49.244,"agent_exec":600.168,"verifier":4.012},"taskName":"generate_terraform_provider_basi","jobId":"Z8xg3uT","exec_duration":600.168}]},{"taskName":"implement_go_response_hook","instruction":"$8","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"implement_go_response_hook__9YAzu2r","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":349.912,"latency_breakdown":{"env_setup":106.153,"agent_setup":94.263,"agent_exec":131.441,"verifier":4.277},"taskName":"implement_go_response_hook","jobId":"9YAzu2r","exec_duration":131.441}]},{"taskName":"implement_python_request_hook","instruction":"$9","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"implement_python_request_hook__UgTkCaX","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":192.546,"latency_breakdown":{"env_setup":46.673,"agent_setup":132.938,"agent_exec":null,"verifier":null},"taskName":"implement_python_request_hook","jobId":"UgTkCaX","exec_duration":192.546}]},{"taskName":"implement_typescript_error_hook","instruction":"$a","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"implement_typescript_error_hook__t8HAZR6","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":172.904,"latency_breakdown":{"env_setup":5.806,"agent_setup":55.851,"agent_exec":87.645,"verifier":7.452},"taskName":"implement_typescript_error_hook","jobId":"t8HAZR6","exec_duration":87.645}]},{"taskName":"overlay_add_response_examples","instruction":"$b","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"overlay_add_response_examples__DcEcDbX","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":190.433,"latency_breakdown":{"env_setup":30.503,"agent_setup":47.144,"agent_exec":96.045,"verifier":3.878},"taskName":"overlay_add_response_examples","jobId":"DcEcDbX","exec_duration":96.045}]},{"taskName":"overlay_remove_deprecated_endpoints","instruction":"# Remove Deprecated Endpoints with OpenAPI Overlays\n\n## Background\nOpenAPI Overlays provide a standard way to modify an OpenAPI specification without altering the original source file. Speakeasy CLI fully supports applying these overlays.\n\n## Requirements\n- Create an OpenAPI overlay file named `overlay.yaml` that removes the deprecated `/old-endpoint` from the provided `openapi.yaml`.\n- Apply the overlay using the Speakeasy CLI and output the result to `modified.yaml`.\n\n## Implementation Guide\n1. Review the provided `openapi.yaml` in the project directory.\n2. Create an `overlay.yaml` file that uses the OpenAPI Overlay specification to target and remove `$.paths['/old-endpoint']`.\n3. Run the command `speakeasy overlay apply -s openapi.yaml -o overlay.yaml --out modified.yaml` to generate the new specification.\n\n## Constraints\n- Project path: /home/user/project\n- The original `openapi.yaml` must not be modified.","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"overlay_remove_deprecated_endpoi__HW2VG2B","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":720.863,"latency_breakdown":{"env_setup":10.682,"agent_setup":34.374,"agent_exec":57.248,"verifier":605.92},"taskName":"overlay_remove_deprecated_endpoi","jobId":"HW2VG2B","exec_duration":57.248}]},{"taskName":"setup_speakeasy_ignore_rules","instruction":"# Setup Speakeasy Ignore Rules\n\n## Background\nYou have a Speakeasy Python SDK project in `/home/user/myproject`. You want to customize the generated SDK by modifying a file manually, but you don't want Speakeasy to overwrite your changes during the next generation.\n\n## Requirements\n- Create a `.genignore` file in the project root to instruct Speakeasy to ignore specific files.\n- Add a rule to ignore the `src/sdk/custom_logic.py` file.\n\n## Implementation Guide\n1. Navigate to `/home/user/myproject`.\n2. Create a `.genignore` file.\n3. Add `src/sdk/custom_logic.py` to the `.genignore` file.\n\n## Constraints\n- Project path: `/home/user/myproject`","trials":[{"job_name":"2026-05-21__12-02-23","trial_name":"setup_speakeasy_ignore_rules__N5ekAY6","model":"gemini-3-flash","rawModel":"google/gemini-3-flash","agent":"Pochi","passed":false,"reward":null,"error":true,"latency_sec":108.807,"latency_breakdown":{"env_setup":21.424,"agent_setup":74.906,"agent_exec":null,"verifier":null},"taskName":"setup_speakeasy_ignore_rules","jobId":"N5ekAY6","exec_duration":108.807}]}]}]}]]}],["$Lc","$Ld"],"$Le"]}],"loading":null,"isPartial":false}
+c:["$","script","script-0",{"src":"/speakeasy-benchmark/_next/static/chunks/6081b281ce901f60.js","async":true}]
+d:["$","script","script-1",{"src":"/speakeasy-benchmark/_next/static/chunks/ab9c434cfac62bb4.js","async":true}]
+e:["$","$Lf",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null
