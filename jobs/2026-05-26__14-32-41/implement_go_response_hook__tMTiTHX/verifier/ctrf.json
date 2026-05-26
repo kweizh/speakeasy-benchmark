@@ -1,0 +1,56 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 4,
+            "passed": 4,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1779779750.9188123,
+            "stop": 1779779751.058343
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_hooks_directory_exists",
+                "status": "passed",
+                "duration": 0.0004935429897159338,
+                "start": 1779779750.928263,
+                "stop": 1779779750.9289541,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_registration_file_exists",
+                "status": "passed",
+                "duration": 0.0003823160004685633,
+                "start": 1779779750.929139,
+                "stop": 1779779750.9296484,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_hook_implementation_contains_header_injection",
+                "status": "passed",
+                "duration": 0.0005054719949839637,
+                "start": 1779779750.929812,
+                "stop": 1779779750.9304388,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_sdk_compiles_successfully",
+                "status": "passed",
+                "duration": 0.1273307309966185,
+                "start": 1779779750.9306002,
+                "stop": 1779779751.0581586,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}

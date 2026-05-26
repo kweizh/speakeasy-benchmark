@@ -1,0 +1,29 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1779777223.6166992,
+            "stop": 1779777223.6308994
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_sdk_class_name_updated",
+                "status": "passed",
+                "duration": 0.0057020329986698925,
+                "start": 1779777223.6246655,
+                "stop": 1779777223.6306677,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}
