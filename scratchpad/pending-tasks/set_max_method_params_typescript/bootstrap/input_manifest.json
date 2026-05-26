@@ -1,7 +1,0 @@
-{
-  "library_name": "speakeasy",
-  "task_name": "set_max_method_params_typescript",
-  "complexity_level": "simple single terminal command",
-  "research_plan_path": "../../../plan.md",
-  "output_dir": "../../../scratchpad/pending-tasks/"
-}
