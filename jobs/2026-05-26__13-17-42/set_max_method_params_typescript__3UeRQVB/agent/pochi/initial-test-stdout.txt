@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+rootdir: /bootstrap
+plugins: json-ctrf-0.5.0
+collected 9 items
+
+bootstrap/test_initial_state.py::test_speakeasy_binary_available PASSED
+bootstrap/test_initial_state.py::test_yq_binary_available PASSED
+bootstrap/test_initial_state.py::test_project_dir_exists PASSED
+bootstrap/test_initial_state.py::test_gen_yaml_exists PASSED
+bootstrap/test_initial_state.py::test_gen_yaml_is_valid_yaml PASSED
+bootstrap/test_initial_state.py::test_gen_yaml_has_typescript_block PASSED
+bootstrap/test_initial_state.py::test_initial_max_method_params_is_zero PASSED
+bootstrap/test_initial_state.py::test_initial_typescript_metadata_fields_present PASSED
+bootstrap/test_initial_state.py::test_initial_top_level_blocks_present PASSED
+
+============================== 9 passed in 0.04s ===============================

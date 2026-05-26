@@ -1,0 +1,12 @@
+configVersion: 2.0.0
+generation:
+  sdkClassName: ExampleSDK
+  usageSnippets:
+    optionalPropertyRendering: withExample
+  fixes:
+    nameResolutionDec2023: true
+    parameterOrderingFeb2024: true
+    requestResponseBasedMethodNamesAndTokensApr2024: true
+go:
+  version: 1.0.0
+  packageName: github.com/example/sdk
