@@ -21,7 +21,7 @@ def test_openapi_modified_is_valid():
     """Use Speakeasy CLI to validate the modified OpenAPI spec."""
     modified_path = os.path.join(PROJECT_DIR, "openapi-modified.yaml")
     result = subprocess.run(
-        ["speakeasy", "validate", "-s", modified_path],
+        ["speakeasy", "lint", "openapi", "-s", modified_path],
         capture_output=True, text=True, cwd=PROJECT_DIR
     )
     assert result.returncode == 0, f"'speakeasy validate' failed on the modified spec: {result.stderr}\n{result.stdout}"

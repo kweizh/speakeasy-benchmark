@@ -9,7 +9,7 @@ OPENAPI_FILE = "/home/user/openapi.yaml"
 def test_openapi_spec_valid_via_cli():
     """Priority 1: Use Speakeasy CLI to verify the OpenAPI specification is valid."""
     result = subprocess.run(
-        ["speakeasy", "validate", "-s", OPENAPI_FILE],
+        ["speakeasy", "lint", "openapi", "-s", OPENAPI_FILE],
         capture_output=True, text=True, cwd=PROJECT_DIR
     )
     assert result.returncode == 0, f"'speakeasy validate' failed: {result.stderr or result.stdout}"
