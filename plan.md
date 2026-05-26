@@ -6,8 +6,11 @@
         ```bash
         # macOS
         brew install speakeasy-api/tap/speakeasy
-        # Linux/macOS script
-        curl -fsSL https://go.speakeasy.com/cli-install.sh | sh
+        # Linux
+        wget https://github.com/speakeasy-api/speakeasy/releases/download/v1.765.1/speakeasy_linux_amd64.zip
+        unzip speakeasy_linux_amd64.zip
+        mv speakeasy /usr/bin/
+        chmod +x /usr/bin/speakeasy
         ```
     2.  **Authenticate**:
         ```bash
@@ -26,7 +29,7 @@
     *   [Workflow Reference](https://www.speakeasy.com/docs/speakeasy-reference/workflow/workflow-yaml)
 *   **CLI Commands**:
     *   `speakeasy generate sdk`: Generates a client SDK from a spec.
-    *   `speakeasy validate`: Checks an OpenAPI spec for compatibility and errors.
+    *   `speakeasy lint openapi -s openapi.yaml`: Checks an OpenAPI spec for compatibility and errors.
     *   `speakeasy run`: Executes the workflows defined in the project.
     *   `speakeasy configure`: Interactive command to manage sources, targets, and publishing.
     *   [CLI Reference](https://www.speakeasy.com/docs/speakeasy-reference/cli/getting-started)
