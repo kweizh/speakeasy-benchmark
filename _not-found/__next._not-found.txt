@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[36064,["/speakeasy-benchmark/_next/static/chunks/eee3fa4a069aaac4.js","/speakeasy-benchmark/_next/static/chunks/c21188132e0e0d48.js","/speakeasy-benchmark/_next/static/chunks/3ecbb78a8ff87549.js"],"default"]
 3:I[81497,["/speakeasy-benchmark/_next/static/chunks/eee3fa4a069aaac4.js","/speakeasy-benchmark/_next/static/chunks/c21188132e0e0d48.js","/speakeasy-benchmark/_next/static/chunks/3ecbb78a8ff87549.js"],"default"]
-0:{"buildId":"r2rsj6j3eq2ucDUL2odi6","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"1xE5Ogsd9vYwuzLi9lneB","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
