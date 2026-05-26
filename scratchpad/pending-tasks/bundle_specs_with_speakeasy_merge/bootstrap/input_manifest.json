@@ -1,0 +1,7 @@
+{
+  "library_name": "speakeasy",
+  "task_name": "bundle_specs_with_speakeasy_merge",
+  "complexity_level": "simple set of 2-5 commands",
+  "research_plan_path": "../../../plan.md",
+  "output_dir": "../../../scratchpad/pending-tasks/"
+}

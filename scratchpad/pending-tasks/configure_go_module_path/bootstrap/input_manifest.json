@@ -1,0 +1,7 @@
+{
+  "library_name": "speakeasy",
+  "task_name": "configure_go_module_path",
+  "complexity_level": "simple single terminal command",
+  "research_plan_path": "../../../plan.md",
+  "output_dir": "../../../scratchpad/pending-tasks/"
+}
