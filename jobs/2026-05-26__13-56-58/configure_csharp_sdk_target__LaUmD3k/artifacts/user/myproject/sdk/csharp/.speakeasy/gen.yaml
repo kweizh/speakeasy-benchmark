@@ -1,0 +1,67 @@
+configVersion: 2.0.0
+generation:
+  sdkClassName: SDK
+  maintainOpenAPIOrder: true
+  usageSnippets:
+    optionalPropertyRendering: withExample
+    sdkInitStyle: constructor
+  useClassNamesForArrayFields: true
+  fixes:
+    nameResolutionDec2023: true
+    nameResolutionFeb2025: true
+    parameterOrderingFeb2024: true
+    requestResponseComponentNamesFeb2024: true
+    securityFeb2025: true
+    sharedErrorComponentsApr2025: true
+    sharedNestedComponentsJan2026: true
+    nameOverrideFeb2026: true
+  auth:
+    oAuth2ClientCredentialsEnabled: true
+    oAuth2PasswordEnabled: true
+    hoistGlobalSecurity: true
+  inferSSEOverload: true
+  sdkHooksConfigAccess: true
+  schemas:
+    allOfMergeStrategy: shallowMerge
+  requestBodyFieldName: body
+  versioningStrategy: automatic
+  persistentEdits: {}
+  tests:
+    generateTests: false
+    generateNewTests: true
+    skipResponseBodyAssertions: false
+csharp:
+  version: 0.0.1
+  additionalDependencies: []
+  author: Speakeasy
+  clientServerStatusCodesAsErrors: true
+  defaultErrorName: APIException
+  disableNamespacePascalCasingApr2024: true
+  dotnetVersion: net10.0
+  enableCancellationToken: true
+  enableFormatting: true
+  enableSourceLink: false
+  flattenGlobalSecurity: true
+  flatteningOrder: parameters-first
+  httpClientPrefix: ""
+  imports:
+    option: openapi
+    paths:
+      callbacks: Models/Callbacks
+      errors: Models/Errors
+      operations: Models/Requests
+      shared: Models/Components
+      webhooks: Models/Webhooks
+  includeDebugSymbols: false
+  inferUnionDiscriminators: true
+  inputModelSuffix: input
+  maxMethodParams: 4
+  methodArguments: infer-optional-args
+  multipartArrayFormat: standard
+  outputModelSuffix: output
+  packageName: Openapi
+  packageTags: ""
+  respectTitlesForPrimitiveUnionMembers: true
+  responseFormat: envelope-http
+  sourceDirectory: src
+  useNodatime: false

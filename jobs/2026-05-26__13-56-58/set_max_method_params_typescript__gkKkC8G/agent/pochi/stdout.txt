@@ -1,0 +1,13 @@
+- Initializing MCP connections...
+You
+# Configure `maxMethodParams` for the TypeScript SDK in Speakeasy `gen.yaml` ## Background Speakeasy generates idiomatic, type-safe client SDKs from an OpenAPI specification. SDK method signatures can either accept a single request object or a list of positional parameters. The `maxMethodParams` option in `gen.yaml` controls the threshold at which Speakeasy switches from positional parameters to a single input object. The default value `0` means every method always uses an input object. Increasing this value gives SDK consumers a more ergonomic call-site experience for small parameter sets. The SDK project lives at `/home/user/project` and already has a `gen.yaml` with a top-level `typescript:` block (alongside other top-level blocks such as `generation:` and `configVersion:`). Your job is to tune the TypeScript SDK generation configuration without changing any other settings. ## Requirements * Edit `/home/user/project/gen.yaml` so that the TypeScript SDK is generated using positional parameters for methods with up to four parameters before falling back to an input object. * Do not change unrelated keys (other fields inside `typescript:` and other top-level blocks must be preserved). ## Implementation Hints * Refer to the Speakeasy `gen.yaml` reference and TypeScript configuration options to confirm the correct field path; the field lives under the top-level `typescript:` block (it is not nested under any `targets:` section). * Any YAML-aware tool (a text editor or a CLI such as `yq`) can be used to apply the change. ## Acceptance Criteria * Project path: /home/user/project * File modified: /home/user/project/gen.yaml * The top-level `typescript.maxMethodParams` value in `gen.yaml` is `4`. * All other previously-present keys in the `typescript:` block and all other top-level blocks remain present with their original values. * `gen.yaml` remains a valid YAML document.   
+
+Pochi
+💭 Thinking for 0 characters   
+📖 Reading /home/user/project/gen.yaml ✔ 
+💭 Thinking for 139 characters   
+🔧 Applying diff to /home/user/project/gen.yaml ✔ 
+💭 Thinking for 0 characters   
+🎉 Task Completed
+Updated /home/user/project/gen.yaml to set typescript.maxMethodParams to 4 while preserving all other settings.   
+  

@@ -1,0 +1,38 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 2,
+            "passed": 2,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1779776192.4373188,
+            "stop": 1779776192.4464257
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_genignore_exists",
+                "status": "passed",
+                "duration": 0.0004990239976905286,
+                "start": 1779776192.4447854,
+                "stop": 1779776192.445481,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_genignore_contains_rule",
+                "status": "passed",
+                "duration": 0.00043958799506071955,
+                "start": 1779776192.4456673,
+                "stop": 1779776192.4462812,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}
