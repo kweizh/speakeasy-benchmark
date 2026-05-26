@@ -1,0 +1,14 @@
+configVersion: 2.0.0
+generation:
+  sdkClassName: SDK
+  baseServerURL: https://api.example.com
+  maintainOpenAPIOrder: true
+  usageSnippets:
+    optionalPropertyRendering: withExample
+typescript:
+  version: 0.1.0
+  packageName: my-sdk
+  author: Example Author
+  maxMethodParams: 0
+  flatteningOrder: parameters-first
+  methodArguments: infer-optional-args
